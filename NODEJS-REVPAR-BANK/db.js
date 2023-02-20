@@ -8,14 +8,10 @@ const client = new Client({
   port: 5432,
 });
 
-client.connect((err, db) => {
+client.connect((err) => {
   if (err) {
     console.log("❌ Connectivity Error");
     return;
   }
   console.log("✅ Connected Successfully");
 });
-
-// const connect = async () => await client.connect();
-
-// connect();
